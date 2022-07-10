@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/btc.css"/>
+      <script src="../static/javaScript/batalla.js" async></script>
+{% endblock %}
+{% block content %}
+<!---->
+
+<div class="container">
+  <button onclick="fight()" class="fight" id="fight">Fight</button>
+  <div class="fuerzas">
+    <hr>
+    <div class="fuerzas_aliadas">
+      <h3>Fuerzas atacantes</h3>
+      Soldados:<p id="soldados"></p>
+      Arqueros:<p id="arqueros"></p>
+      Caballeros:<p id="caballeros"></p>
+      
+    </div>
+    <hr>
+    <div class="fuerzas_enemigas">
+      <h3>fuerzas defensoras</h3>
+      Soldados:<p id="soldados_enemigos"></p>
+      Arqueros:<p id="arqueros_enemigos"></p>
+      Caballeros:<p id="caballeros_enemigos"></p>      
+    </div>
+    
+  </div>
+  <hr>
+  Primer ataque:
+  <div>
+    <p id="test"></p>
+
+    <p>restos soldados atacantes</p>
+    <p id="perdidas_atacantes_soldados"></p>
+    <p id="restos_atacantes_soldados"></p>
+    <p>Restos caballeros atacantes</p>
+    <p id="perdidas_atacantes_caballeros"></p>
+    <p id="restos_atacantes_caballeros"></p>
+    <p>Restos arqueros atacantes</p>
+    <p id="perdidas_atacantes_arqueros"></p>
+    <p id="restos_atacantes_arqueros"></p>
+    <br>
+    <p>restos soldados defensores</p>
+    <p id="perdidas_defensores_soldados"></p>
+    <p id="restos_defensores_soldados"></p>
+    <p>Restos caballeros defensores</p>
+    <p id="perdidas_defensores_caballeros"></p>
+    <p id="restos_defensores_caballeros"></p>
+    <p>Restos arqueros defensores</p>
+    <p id="perdidas_defensores_arqueros"></p>
+    <p id="restos_defensores_arqueros"></p>
+  </div>
+</div>
+{% endblock %}
